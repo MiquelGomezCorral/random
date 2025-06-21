@@ -1,0 +1,137 @@
+/*=================================*/
+/*          COLORES                */
+/*=================================*/
+:root {
+  --verde: #57d033; /* Verde */
+  --verde-oscuro: #58d033d8; /* Verde */
+  --rojo: #fa4747; /* Verde */
+  --rojo-oscuro: #fa4747d8; /* Verde */
+  --rosa: #ff678f; /* Verde */
+  --rosa-oscuro: #ff678fd8; /* Verde */
+  --blanco: #ffffff; /* Verde */
+  --negro: #1d1f27; /* Verde */
+  --negro-oscuro: #16171d; /* Verde */
+}
+
+/*=================================*/
+/*          TEXTO NORMAL            */
+/*=================================*/
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: #1d1f27; /* Negro */
+  color: #ffffff; /* Blanco */
+}
+label{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+input, textarea {
+  width: 35vw;
+  font-size: 16px;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 2px solid var(--blanco);
+  border-radius: 5px;
+  color: var(--blanco);;
+  background-color: var(--negro)
+}
+h1 {
+  font-size: 65px;
+  margin-bottom: 50px;
+}
+
+/*=================================*/
+/*          BOTONES                */
+/*=================================*/
+.buttonRed {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--blanco);;
+  border-radius: 5px;
+  color: var(--blanco);;
+  background-color: var(--rojo); /* Color de fondo */
+}
+.buttonRed:hover:not(:disabled) {
+  background-color: var(--rojo-oscuro); /* Cambio de color de fondo */
+}
+.buttonPink {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--blanco);
+  border-radius: 5px;
+  color: var(--blanco);
+  background-color: var(--rosa); /* Color de fondo */
+}
+.buttonPink:hover:not(:disabled){
+  background-color: var(--rosa-oscuro); /* Cambio de color de fondo */
+}
+
+.buttonGreen{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--blanco);
+  border-radius: 5px;
+  color: var(--blanco);
+  background-color: var(--verde); 
+}
+.buttonGreen:hover:not(:disabled) {
+  background-color: var(--verde-oscuro); 
+}
+button:disabled {
+  background-color: var(--negro); 
+  cursor: not-allowed;
+}
+
+/*=================================*/
+/*          COSAS CHULAS                */
+/*=================================*/
+/* Estilo para los corazones */
+.heart {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+  animation: heartAnimation 1s linear infinite;
+  background-image: url('heat.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform-origin: center;
+}
+@keyframes heartAnimation {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-75vh) rotate(360deg); }
+}
+
+.bloque-texto {
+  width: 50vw; /* Ancho del bloque de texto */
+  height: 25vw; /* Alto del bloque de texto */
+  text-align: left; 
+  background-color: var(--negro-oscuro); /* Color de fondo del bloque de texto */
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: 25px;
+  padding: 20px; 
+  white-space: pre-line;
+}
+
+
+  
